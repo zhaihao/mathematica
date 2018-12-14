@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6755,        197]
+NotebookOptionsPosition[      5509,        173]
+NotebookOutlinePosition[      5875,        189]
+CellTagsIndexPosition[      5832,        186]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"RegularPolygon", "[", "3", "]"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "100"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7537593262056313`*^9, 3.753759392490654*^9}, {
+  3.753759439710292*^9, 
+  3.753759469987967*^9}},ExpressionUUID->"3ab384a2-10a5-453e-85dc-\
+0916895cac0e"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{
+     RowBox[{"Circle", "[", "]"}], ",", "Red"}], "]"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "100"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.753759502682934*^9, 
+  3.753759527821279*^9}},ExpressionUUID->"8d83e0eb-6eff-4c8e-b661-\
+0444f917a231"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{
+     RowBox[{"RegularPolygon", "[", "8", "]"}], ",", "Red"}], "]"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "100"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.753759543903886*^9, 
+  3.753759564460372*^9}},ExpressionUUID->"b52b2d11-7fa2-45a1-984a-\
+8def83f1bd6d"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"Disk", "[", "]"}], ",", 
+       RowBox[{"Hue", "[", "x", "]"}]}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "50"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1", ",", "0.1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.753759581409749*^9, 
+  3.7537596603055897`*^9}},ExpressionUUID->"fec9c3c7-028c-4fab-a5af-\
+d4a88c78c77b"],
+
+Cell[BoxData[
+ RowBox[{"Column", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"RegularPolygon", "[", "3", "]"}], ",", "Red"}], "]"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], ",", 
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"RegularPolygon", "[", "3", "]"}], ",", "Green"}], "]"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.753759729515357*^9, 
+  3.7537598363786783`*^9}},ExpressionUUID->"7b72b51a-8401-468d-9669-\
+09eaa4e806fd"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", "n", "]"}], ",", "Pink"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "5", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7537598609934473`*^9, 
+  3.753759913165751*^9}},ExpressionUUID->"9fd36a7a-a249-45a9-8f7d-\
+b2edd6459695"],
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{
+     RowBox[{"Cylinder", "[", "]"}], ",", "Purple"}], "]"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7537599305819817`*^9, 
+  3.7537599852270117`*^9}},ExpressionUUID->"9e606f37-cde5-4a40-bd89-\
+0a0ba82643ff"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", "n", "]"}], ",", 
+       RowBox[{"RandomColor", "[", "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "8", ",", "3", ",", 
+       RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.753760079925259*^9, 3.753760165390134*^9}, {
+  3.753760248173435*^9, 
+  3.7537602523129997`*^9}},ExpressionUUID->"27ba9078-7147-46a0-a204-\
+7608cf652e9b"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"RegularPolygon", "[", "5", "]"}], ",", 
+       RowBox[{"RandomColor", "[", "]"}]}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], ",", "10"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.753760202123745*^9, 
+  3.753760267805135*^9}},ExpressionUUID->"d7e876f4-4afa-4c1a-afcb-\
+9a3f671f5432"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"RegularPolygon", "[", "20", "]"}], "]"}], ",", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Disk", "[", "]"}], "]"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.753760284427731*^9, 
+  3.753760315547277*^9}},ExpressionUUID->"e03c6732-58a1-481d-919f-\
+0569c22a9526"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"RegularPolygon", "[", "n", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "10", ",", "3", ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.753760326827108*^9, 
+  3.753760354962082*^9}},ExpressionUUID->"62bf1817-3139-44a4-a11c-\
+a6c0ac23d15f"]
+},
+WindowSize->{808, 707},
+WindowMargins->{{Automatic, 258}, {Automatic, 1}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (2017\:5e749\
+\:670810\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 343, 8, 44, "Input",ExpressionUUID->"3ab384a2-10a5-453e-85dc-0916895cac0e"],
+Cell[904, 30, 341, 9, 44, "Input",ExpressionUUID->"8d83e0eb-6eff-4c8e-b661-0444f917a231"],
+Cell[1248, 41, 354, 9, 44, "Input",ExpressionUUID->"b52b2d11-7fa2-45a1-984a-8def83f1bd6d"],
+Cell[1605, 52, 510, 14, 44, "Input",ExpressionUUID->"fec9c3c7-028c-4fab-a5af-d4a88c78c77b"],
+Cell[2118, 68, 679, 19, 80, "Input",ExpressionUUID->"7b72b51a-8401-468d-9669-09eaa4e806fd"],
+Cell[2800, 89, 484, 13, 44, "Input",ExpressionUUID->"9fd36a7a-a249-45a9-8f7d-b2edd6459695"],
+Cell[3287, 104, 354, 9, 44, "Input",ExpressionUUID->"9e606f37-cde5-4a40-bd89-0a0ba82643ff"],
+Cell[3644, 115, 603, 16, 80, "Input",ExpressionUUID->"27ba9078-7147-46a0-a204-7608cf652e9b"],
+Cell[4250, 133, 461, 13, 44, "Input",ExpressionUUID->"d7e876f4-4afa-4c1a-afcb-9a3f671f5432"],
+Cell[4714, 148, 342, 9, 44, "Input",ExpressionUUID->"e03c6732-58a1-481d-919f-0569c22a9526"],
+Cell[5059, 159, 446, 12, 44, "Input",ExpressionUUID->"62bf1817-3139-44a4-a11c-a6c0ac23d15f"]
+}
+]
+*)
+
