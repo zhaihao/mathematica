@@ -1,0 +1,338 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12945,        330]
+NotebookOptionsPosition[     10849,        297]
+NotebookOutlinePosition[     11214,        313]
+CellTagsIndexPosition[     11171,        310]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   TemplateBox[{"4.5","\"lb\"","pounds","\"Pounds\""},
+    "Quantity"], ",", "\"\<kg\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754112905672761*^9, 3.754112952427535*^9}, {
+  3.7541130190348454`*^9, 
+  3.7541130600492573`*^9}},ExpressionUUID->"c491907f-1941-406f-8f8d-\
+ccf540aa7601"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   TemplateBox[{
+    "60.25",RowBox[{
+      "\"mi\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
+     "miles per hour",FractionBox["\"Miles\"", "\"Hours\""]},
+    "Quantity"], ",", "\"\<kph\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7541130818739233`*^9, 
+  3.754113119786332*^9}},ExpressionUUID->"42e77abe-adf6-4073-a7f7-\
+35fe5b63a95a"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Eiffel Tower\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Building\"", ",", "\"EiffelTower::5h9w8\""}], "]"}],
+      "\"Entity[\\\"Building\\\", \\\"EiffelTower::5h9w8\\\"]\"",
+      "\"building\""},
+     "Entity"], "[", "\"\<Height\>\"", "]"}], ",", "\"\<mile\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754113139339458*^9, 
+  3.754113202650517*^9}},ExpressionUUID->"6fd58424-1ed3-4525-a873-\
+815c43a8f217"],
+
+Cell[BoxData[
+ RowBox[{"Divide", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Mount Everest\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Mountain\"", ",", "\"MountEverest\""}], "]"}],
+      "\"Entity[\\\"Mountain\\\", \\\"MountEverest\\\"]\"","\"mountain\""},
+     "Entity"], "[", "\"\<Elevation\>\"", "]"}], " ", ",", " ", 
+   RowBox[{
+    TemplateBox[{"\"Eiffel Tower\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Building\"", ",", "\"EiffelTower::5h9w8\""}], "]"}],
+      "\"Entity[\\\"Building\\\", \\\"EiffelTower::5h9w8\\\"]\"",
+      "\"building\""},
+     "Entity"], "[", "\"\<Height\>\"", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754113246992528*^9, 3.754113270547029*^9}, {
+   3.7541133109047413`*^9, 3.754113317522358*^9}, {3.7541134015806503`*^9, 
+   3.754113430569687*^9}, 
+   3.754113576492378*^9},ExpressionUUID->"4453539f-bb9b-45fa-b815-\
+4b32a0acae47"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   TemplateBox[{"\"Earth\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}],
+     "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"","\"planet\""},
+    "Entity"], "[", "\"\<Mass\>\"", "]"}], " ", "/", " ", 
+  RowBox[{
+   TemplateBox[{"\"Moon\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"PlanetaryMoon\"", ",", "\"Moon\""}], "]"}],
+     "\"Entity[\\\"PlanetaryMoon\\\", \\\"Moon\\\"]\"","\"planetary moon\""},
+    "Entity"], "[", "\"\<Mass\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.754113451379264*^9, 3.754113463206468*^9}, {
+  3.754113503813416*^9, 3.754113536518214*^9}, {3.7541135691709013`*^9, 
+  3.754113638186607*^9}},ExpressionUUID->"ec69da27-f6f8-4b6c-b9ba-\
+1c4bf769bec1"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   TemplateBox[{"2500",RowBox[{
+       FormBox["\"\[Yen]\"", TraditionalForm], "\[VeryThinSpace]"}],
+     "Japanese yen","\"Yen\""},
+    "QuantityPrefix"], ",", "\"\<USDollars\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7541136678013277`*^9, 
+  3.754113708191391*^9}},ExpressionUUID->"88197a73-d035-4f2d-bc7d-\
+b035512b7be6"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"35","\"oz\"","ounces","\"Ounces\""},
+     "Quantity"], "+", 
+    TemplateBox[{"0.25","\"sh tn\"","short tons","\"ShortTons\""},
+     "Quantity"], "+", 
+    TemplateBox[{"45","\"lb\"","pounds","\"Pounds\""},
+     "Quantity"], "+", 
+    TemplateBox[{"9","\"stone\"","stone","\"Stones\""},
+     "Quantity"]}], ",", "\"\<kg\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7541138349780684`*^9, 
+  3.754113937386476*^9}},ExpressionUUID->"9a4539e8-ba6d-4e99-a494-\
+7b813fe8492b"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"planets\"",RowBox[{"EntityClass", "[", 
+        RowBox[{"\"Planet\"", ",", "All"}], "]"}],
+      "\"EntityClass[\\\"Planet\\\", All]\"","\"planets\""},
+     "EntityClass"], "[", "\"\<DistanceFromEarth\>\"", "]"}], ",", 
+   "\"\<light minutes\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7541139917316227`*^9, 
+  3.754114067771606*^9}},ExpressionUUID->"058c79d0-70ea-4932-bde1-\
+34a031840d7f"],
+
+Cell[BoxData[
+ RowBox[{"Rotate", "[", 
+  RowBox[{"\"\<hello\>\"", ",", 
+   RowBox[{"180", " ", "Degree"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754114092366518*^9, 
+  3.754114109692971*^9}},ExpressionUUID->"b4dc7d7f-f70c-4238-8398-\
+6b735f7529af"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Rotate", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<A\>\"", ",", "100"}], "]"}], ",", 
+     RowBox[{"d", " ", "Degree"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "0", ",", "360", ",", "30"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754114118232135*^9, 
+  3.7541141779171*^9}},ExpressionUUID->"e0073626-5be8-46b6-aebb-fec1fb45a6d5"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Rotate", "[", 
+    RowBox[{
+     RowBox[{
+      TemplateBox[{"\"domestic cat\"",RowBox[{"Entity", "[", 
+          RowBox[{"\"Species\"", ",", "\"Species:FelisCatus\""}], "]"}],
+        "\"Entity[\\\"Species\\\", \\\"Species:FelisCatus\\\"]\"",
+        "\"species specification\""},
+       "Entity"], "[", "\"\<Image\>\"", "]"}], ",", 
+     RowBox[{"d", " ", "Degree"}]}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "0", ",", "180"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7541141918275433`*^9, 
+  3.75411428185725*^9}},ExpressionUUID->"730b2402-60c0-4b21-ad8a-\
+dc0d74ea76c6"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"Line", "[", 
+   RowBox[{"AnglePath", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"r", " ", "Degree"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"r", ",", "0", ",", "180", ",", "1"}], "}"}]}], "]"}], "]"}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754114327309086*^9, 3.7541143794435663`*^9}, {
+  3.7541144147646923`*^9, 
+  3.754114435062757*^9}},ExpressionUUID->"a371e4ad-3168-443c-8805-\
+b04151130ae4"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+    RowBox[{"Line", "[", "\[IndentingNewLine]", 
+     RowBox[{"AnglePath", "[", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"x", " ", "Degree"}], ",", "100"}], "]"}], 
+      "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "360"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754114480763145*^9, 3.7541145044448957`*^9}, {
+  3.7541146563306513`*^9, 3.754114674578034*^9}, {3.754114727122897*^9, 
+  3.754114727976646*^9}, {3.7541148144424047`*^9, 
+  3.7541149128157473`*^9}},ExpressionUUID->"4b5d1e5d-0835-4591-b4d2-\
+02d399c79408"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+  RowBox[{"Line", "[", "\[IndentingNewLine]", 
+   RowBox[{"AnglePath", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "10000"}], "]"}], " ", "*", " ", "30", "\[Degree]"}], 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7541149975660973`*^9, 
+  3.754115122889304*^9}},ExpressionUUID->"a2e95886-e203-420c-9278-\
+9a8ceb39e125"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   TemplateBox[{"4.3","\"ly\"","light years","\"LightYears\""},
+    "Quantity"], ",", "\"\<furlongs\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754115149544611*^9, 
+  3.754115186245706*^9}},ExpressionUUID->"b98377cd-a2c3-423e-bde4-\
+12e18984a7d0"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   TemplateBox[{"20000","\"leagues\"","leagues","\"Leagues\""},
+    "Quantity"], ",", "\"\<miles\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754115256336535*^9, 
+  3.754115281557506*^9}},ExpressionUUID->"443aba92-0214-4fc0-92f6-\
+c78c22174d01"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Rotate", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<W\>\"", ",", "200"}], "]"}], ",", 
+     RowBox[{"r", " ", "Degree"}]}], "\[IndentingNewLine]", "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0", ",", "360"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754115294335897*^9, 
+  3.754115354151641*^9}},ExpressionUUID->"41c6b9b4-e908-4ca3-8bfc-\
+1287a97860d2"],
+
+Cell[BoxData[
+ RowBox[{"Rotate", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Pyramid of Menkaure\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Building\"", ",", "\"ThePyramidOfMenkaure::km522\""}], 
+        "]"}],"\"Entity[\\\"Building\\\", \
+\\\"ThePyramidOfMenkaure::km522\\\"]\"","\"building\""},
+     "Entity"], "[", "\"\<Image\>\"", "]"}], ",", 
+   RowBox[{"180", " ", "Degree"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.75411537046801*^9, 3.75411540986639*^9}, {
+  3.754115456694556*^9, 
+  3.754115498871921*^9}},ExpressionUUID->"3382b11e-6044-4d46-b82b-\
+4f5004bb65e8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Rotate", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"RandomInteger", "[", "360", "]"}]}], "]"}], " ", "&"}], "/@", 
+  " ", 
+  RowBox[{"Alphabet", "[", 
+   RowBox[{"Language", "->", "\"\<English\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7541155146075563`*^9, 3.7541156955992603`*^9}, {
+  3.754115734263342*^9, 3.75411575591759*^9}, {3.754115790540509*^9, 
+  3.754115831962119*^9}},ExpressionUUID->"05bd90b8-00cb-488f-adf9-\
+6b7bb12631fd"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"Line", "[", 
+   RowBox[{"AnglePath", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"RandomInteger", "[", "360", "]"}], " ", "Degree"}], ",", 
+      "100"}], "]"}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.75412153267815*^9, 
+  3.7541215948605347`*^9}},ExpressionUUID->"0423c884-963e-4677-85ac-\
+d3dde37cd634"]
+},
+WindowSize->{648, 799},
+WindowMargins->{{Automatic, 12}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (2017\:5e749\
+\:670810\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 343, 8, 47, "Input",ExpressionUUID->"c491907f-1941-406f-8f8d-ccf540aa7601"],
+Cell[904, 30, 416, 10, 47, "Input",ExpressionUUID->"42e77abe-adf6-4073-a7f7-35fe5b63a95a"],
+Cell[1323, 42, 502, 12, 53, "Input",ExpressionUUID->"6fd58424-1ed3-4525-a873-815c43a8f217"],
+Cell[1828, 56, 880, 18, 86, "Input",ExpressionUUID->"4453539f-bb9b-45fa-b815-4b32a0acae47"],
+Cell[2711, 76, 745, 15, 39, "Input",ExpressionUUID->"ec69da27-f6f8-4b6c-b9ba-1c4bf769bec1"],
+Cell[3459, 93, 383, 9, 46, "Input",ExpressionUUID->"88197a73-d035-4f2d-bc7d-b035512b7be6"],
+Cell[3845, 104, 557, 14, 47, "Input",ExpressionUUID->"9a4539e8-ba6d-4e99-a494-7b813fe8492b"],
+Cell[4405, 120, 481, 11, 53, "Input",ExpressionUUID->"058c79d0-70ea-4932-bde1-34a031840d7f"],
+Cell[4889, 133, 251, 6, 44, "Input",ExpressionUUID->"b4dc7d7f-f70c-4238-8398-6b735f7529af"],
+Cell[5143, 141, 437, 11, 44, "Input",ExpressionUUID->"e0073626-5be8-46b6-aebb-fec1fb45a6d5"],
+Cell[5583, 154, 733, 17, 146, "Input",ExpressionUUID->"730b2402-60c0-4b21-ad8a-dc0d74ea76c6"],
+Cell[6319, 173, 481, 13, 44, "Input",ExpressionUUID->"a371e4ad-3168-443c-8805-b04151130ae4"],
+Cell[6803, 188, 855, 18, 295, "Input",ExpressionUUID->"4b5d1e5d-0835-4591-b4d2-02d399c79408"],
+Cell[7661, 208, 526, 11, 217, "Input",ExpressionUUID->"a2e95886-e203-420c-9278-9a8ceb39e125"],
+Cell[8190, 221, 305, 7, 47, "Input",ExpressionUUID->"b98377cd-a2c3-423e-bde4-12e18984a7d0"],
+Cell[8498, 230, 302, 7, 47, "Input",ExpressionUUID->"443aba92-0214-4fc0-92f6-c78c22174d01"],
+Cell[8803, 239, 557, 14, 181, "Input",ExpressionUUID->"41c6b9b4-e908-4ca3-8bfc-1287a97860d2"],
+Cell[9363, 255, 582, 13, 53, "Input",ExpressionUUID->"3382b11e-6044-4d46-b82b-4f5004bb65e8"],
+Cell[9948, 270, 490, 12, 44, "Input",ExpressionUUID->"05bd90b8-00cb-488f-adf9-6b7bb12631fd"],
+Cell[10441, 284, 404, 11, 44, "Input",ExpressionUUID->"0423c884-963e-4677-85ac-d3dde37cd634"]
+}
+]
+*)
+
