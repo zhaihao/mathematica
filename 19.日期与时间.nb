@@ -1,0 +1,362 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13792,        354]
+NotebookOptionsPosition[     11492,        318]
+NotebookOutlinePosition[     11879,        335]
+CellTagsIndexPosition[     11836,        332]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["\.10"], "Input",
+ CellChangeTimes->{
+  3.75419139766712*^9},ExpressionUUID->"78f65df5-7751-4bee-8736-803abe1758d2"],
+
+Cell[BoxData[
+ RowBox[{"Now", "-", 
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"1900", ",", " ", "1", ",", " ", "1"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7541876459192057`*^9, 
+  3.754187692665267*^9}},ExpressionUUID->"50ec4f62-ae9a-4aa0-9f36-\
+e8c03d60542c"],
+
+Cell[BoxData[
+ RowBox[{"DayName", "[", 
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"2000", ",", "1", ",", "1"}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754187721270398*^9, 
+  3.754187814592551*^9}},ExpressionUUID->"ba14046b-3406-4f97-8573-\
+9bfe535658c9"],
+
+Cell[BoxData[
+ RowBox[{"Now", "-", 
+  TemplateBox[{"100000","\"days\"","days","\"Days\""},
+   "Quantity"]}]], "Input",
+ CellChangeTimes->{{3.754187866123214*^9, 
+  3.754187900585908*^9}},ExpressionUUID->"270e1e10-ccc8-4429-a36a-\
+ef416472dce4"],
+
+Cell[BoxData[
+ RowBox[{"LocalTime", "[", 
+  TemplateBox[{"\"Delhi\"",RowBox[{"Entity", "[", 
+      RowBox[{"\"City\"", ",", 
+        RowBox[{"{", 
+          RowBox[{"\"Delhi\"", ",", "\"Delhi\"", ",", "\"India\""}], "}"}]}], 
+      "]"}],"\"Entity[\\\"City\\\", {\\\"Delhi\\\", \\\"Delhi\\\", \
+\\\"India\\\"}]\"","\"city\""},
+   "Entity"], "]"}]], "Input",
+ CellChangeTimes->{{3.75418800896591*^9, 
+  3.7541880270601473`*^9}},ExpressionUUID->"2c85b304-6014-4123-bb00-\
+83e68d8a69b0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sunset", "[", 
+   RowBox[{
+    TemplateBox[{"\"Hangzhou\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"City\"", ",", 
+          RowBox[{"{", 
+            RowBox[{"\"Hangzhou\"", ",", "\"Zhejiang\"", ",", "\"China\""}], 
+            "}"}]}], "]"}],
+      "\"Entity[\\\"City\\\", {\\\"Hangzhou\\\", \\\"Zhejiang\\\", \
+\\\"China\\\"}]\"","\"city\""},
+     "Entity"], ",", 
+    RowBox[{"DateObject", "[", 
+     RowBox[{"{", 
+      RowBox[{"2018", ",", " ", "6", ",", " ", "1"}], "}"}], "]"}]}], "]"}], 
+  "-", 
+  RowBox[{"Sunrise", "[", 
+   RowBox[{
+    TemplateBox[{"\"Hangzhou\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"City\"", ",", 
+          RowBox[{"{", 
+            RowBox[{"\"Hangzhou\"", ",", "\"Zhejiang\"", ",", "\"China\""}], 
+            "}"}]}], "]"}],
+      "\"Entity[\\\"City\\\", {\\\"Hangzhou\\\", \\\"Zhejiang\\\", \
+\\\"China\\\"}]\"","\"city\""},
+     "Entity"], ",", 
+    RowBox[{"DateObject", "[", 
+     RowBox[{"{", 
+      RowBox[{"2018", ",", "6", ",", "1"}], "}"}], "]"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.7541880742222424`*^9, 3.754188083967786*^9}, {
+  3.754188228127839*^9, 3.7541882289676123`*^9}, {3.754188267104013*^9, 
+  3.754188303422987*^9}, {3.754189354076914*^9, 
+  3.754189376545014*^9}},ExpressionUUID->"1c250b03-4bbd-4dd1-937f-\
+ab0c7fccf51e"],
+
+Cell[BoxData[
+ TemplateBox[{"838","\"min\"","minutes","\"Minutes\""},
+  "Quantity"]], "Input",
+ CellChangeTimes->{{3.754189473495101*^9, 
+  3.7541894761640043`*^9}},ExpressionUUID->"cd3761d3-fbc0-4ee5-9bee-\
+428823a73957"],
+
+Cell[BoxData[
+ RowBox[{"MoonPhase", "[", 
+  RowBox[{"Today", ",", "\"\<Icon\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754188331776362*^9, 
+  3.75418838591317*^9}},ExpressionUUID->"6909b691-3652-44ed-8c2a-\
+482249e32c20"],
+
+Cell[BoxData[
+ RowBox[{"MoonPhase", " ", "/@", "  ", 
+  RowBox[{"DayRange", "[", 
+   RowBox[{"Today", ",", 
+    RowBox[{"Today", "+", 
+     TemplateBox[{"10","\"days\"","days","\"Days\""},
+      "Quantity"]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.754188408970398*^9, 3.754188413585146*^9}, {
+  3.754188455771989*^9, 3.754188537722576*^9}, {3.7541885685465117`*^9, 
+  3.7541885797994328`*^9}},ExpressionUUID->"a5236e5d-1888-4a16-838a-\
+8678130e8f99"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"MoonPhase", "[", 
+    RowBox[{
+     RowBox[{"DayPlus", "[", 
+      RowBox[{"Today", ",", "n"}], "]"}], ",", "\"\<Icon\>\""}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "5", ",", "1"}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.754189836962709*^9, 3.754189865035331*^9}, {
+  3.7541899007348127`*^9, 
+  3.754190061479286*^9}},ExpressionUUID->"2d53643c-b1d6-40ef-b1ea-\
+faa77e167eee"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sunrise", "[", 
+   TemplateBox[{"\"London\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"City\"", ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"London\"", ",", "\"GreaterLondon\"", ",", 
+             "\"UnitedKingdom\""}], "}"}]}], "]"}],
+     "\"Entity[\\\"City\\\", {\\\"London\\\", \\\"GreaterLondon\\\", \
+\\\"UnitedKingdom\\\"}]\"","\"city\""},
+    "Entity"], "]"}], "-", 
+  RowBox[{"Sunrise", "[", 
+   TemplateBox[{"\"New York City\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"City\"", ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"NewYork\"", ",", "\"NewYork\"", ",", 
+             "\"UnitedStates\""}], "}"}]}], "]"}],
+     "\"Entity[\\\"City\\\", {\\\"NewYork\\\", \\\"NewYork\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+    "Entity"], "]"}]}]], "Input",
+ CellChangeTimes->{{3.754190099927577*^9, 3.754190106132291*^9}, {
+  3.754191580310482*^9, 3.754191596679379*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1ce2db2e-3ed4-438a-9e18-b33301f3d900"],
+
+Cell[BoxData[
+ RowBox[{"AirTemperatureData", "[", 
+  RowBox[{
+   TemplateBox[{"\"Eiffel Tower\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Building\"", ",", "\"EiffelTower::5h9w8\""}], "]"}],
+     "\"Entity[\\\"Building\\\", \\\"EiffelTower::5h9w8\\\"]\"",
+     "\"building\""},
+    "Entity"], ",", 
+   RowBox[{"DateObject", "[", 
+    RowBox[{"Yesterday", ",", " ", 
+     RowBox[{"TimeObject", "[", 
+      RowBox[{"{", 
+       RowBox[{"12", ",", " ", "0", ",", " ", "0"}], "}"}], "]"}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754196039452671*^9, 3.754196069937011*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"844ec868-d12c-4c86-92e6-d56b9940a361"],
+
+Cell[BoxData[
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{"AirTemperatureData", "[", 
+   RowBox[{
+    TemplateBox[{"\"Eiffel Tower\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Building\"", ",", "\"EiffelTower::5h9w8\""}], "]"}],
+      "\"Entity[\\\"Building\\\", \\\"EiffelTower::5h9w8\\\"]\"",
+      "\"building\""},
+     "Entity"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"DatePlus", "[", 
+       RowBox[{"Today", ",", " ", 
+        RowBox[{"-", 
+         TemplateBox[{"1","\"wk\"","weeks","\"Weeks\""},
+          "Quantity"]}]}], "]"}], ",", "Now"}], "}"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754196188500703*^9, 3.754196196430056*^9}, {
+  3.754196230928708*^9, 3.754196280406369*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"60769d68-109b-4f37-b076-1f1429041f92"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AirTemperatureData", "[", 
+   RowBox[{
+    TemplateBox[{"\"Los Angeles\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"City\"", ",", 
+          RowBox[{"{", 
+            
+            RowBox[{"\"LosAngeles\"", ",", "\"California\"", ",", 
+              "\"UnitedStates\""}], "}"}]}], "]"}],
+      "\"Entity[\\\"City\\\", {\\\"LosAngeles\\\", \\\"California\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+     "Entity"], ",", "Now"}], "]"}], "-", 
+  RowBox[{"AirTemperatureData", "[", 
+   RowBox[{
+    TemplateBox[{"\"New York City\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"City\"", ",", 
+          RowBox[{"{", 
+            
+            RowBox[{"\"NewYork\"", ",", "\"NewYork\"", ",", 
+              "\"UnitedStates\""}], "}"}]}], "]"}],
+      "\"Entity[\\\"City\\\", {\\\"NewYork\\\", \\\"NewYork\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+     "Entity"], ",", "Now"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.754196326651639*^9, 3.754196375391713*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"10fe1172-9819-430c-b281-98b39a540b84"],
+
+Cell[BoxData[
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{"WordFrequencyData", "[", 
+   RowBox[{"\"\<groovy\>\"", ",", "\"\<TimeSeries\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754196524426249*^9, 3.754196647114929*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"7acd25e4-82a1-4847-9a9a-a20bcd5caa4e"],
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Now", "-", 
+    RowBox[{"DateObject", "[", 
+     RowBox[{"{", 
+      RowBox[{"1900", ",", " ", "1", ",", " ", "1"}], "}"}], "]"}]}], ",", 
+   "\"\<week\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754196664960573*^9, 3.754196694831089*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"7b3ad7bd-6ab0-443f-922b-59c4eccd5e1a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sunset", "[", "Today", "]"}], "-", 
+  RowBox[{"DateObject", "[", 
+   RowBox[{"Today", ",", " ", 
+    RowBox[{"TimeObject", "[", 
+     RowBox[{"{", "15", "}"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.754196724746253*^9, 3.754196743214192*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"bb367550-56e0-41de-be69-8e533d284e51"],
+
+Cell[BoxData[
+ RowBox[{"MoonPhase", "[", 
+  RowBox[{
+   RowBox[{"DateObject", "[", 
+    RowBox[{"{", 
+     RowBox[{"1959", ",", " ", "8", ",", " ", "29"}], "}"}], "]"}], ",", 
+   "\"\<Icon\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.754196771131061*^9, 3.7541968074835*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"99f3629f-68cd-498e-8f6e-f422e10a0904"],
+
+Cell[BoxData[
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{
+   RowBox[{"DateRange", "[", 
+    RowBox[{"Today", ",", 
+     RowBox[{"Today", "+", 
+      TemplateBox[{"30","\"days\"","days","\"Days\""},
+       "Quantity"]}]}], "]"}], " ", "//", " ", "MoonPhase"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.754196837474041*^9, 3.754196897377021*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"c9dbac08-1020-4f5c-a136-6e2612aec3e1"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"MoonPhase", "[", 
+    RowBox[{
+     RowBox[{"DayPlus", "[", 
+      RowBox[{"Today", ",", "x"}], "]"}], ",", "\"\<Icon\>\""}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "15", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754196925023325*^9, 3.754196976713904*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"07f72687-4fc2-4032-ab7f-dacb6f6a51f0"],
+
+Cell[BoxData[
+ RowBox[{"Column", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Sunrise", "[", 
+     RowBox[{"DatePlus", "[", 
+      RowBox[{"Today", ",", "n"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "10", ",", "1"}], "}"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7541970023867197`*^9, 3.754197176888892*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"b210f344-9ef9-4bc1-bf19-dd32c553e730"],
+
+Cell[BoxData[
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{"WordFrequencyData", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<science\>\"", ",", "\"\<technology\>\""}], "}"}], ",", 
+    "\"\<TimeSeries\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7541971963081207`*^9, 3.7541972267448387`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"656d3164-9b6e-44dc-b2ec-b41ea40ed73e"]
+},
+WindowSize->{679, 804},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 129, 2, 30, "Input",ExpressionUUID->"78f65df5-7751-4bee-8736-803abe1758d2"],
+Cell[690, 24, 288, 7, 44, "Input",ExpressionUUID->"50ec4f62-ae9a-4aa0-9f36-e8c03d60542c"],
+Cell[981, 33, 285, 7, 44, "Input",ExpressionUUID->"ba14046b-3406-4f97-8573-9bfe535658c9"],
+Cell[1269, 42, 244, 6, 47, "Input",ExpressionUUID->"270e1e10-ccc8-4429-a36a-ef416472dce4"],
+Cell[1516, 50, 484, 11, 53, "Input",ExpressionUUID->"2c85b304-6014-4123-bb00-83e68d8a69b0"],
+Cell[2003, 63, 1329, 34, 99, "Input",ExpressionUUID->"1c250b03-4bbd-4dd1-937f-ab0c7fccf51e"],
+Cell[3335, 99, 222, 5, 32, "Input",ExpressionUUID->"cd3761d3-fbc0-4ee5-9bee-428823a73957"],
+Cell[3560, 106, 225, 5, 44, "Input",ExpressionUUID->"6909b691-3652-44ed-8c2a-482249e32c20"],
+Cell[3788, 113, 455, 10, 47, "Input",ExpressionUUID->"a5236e5d-1888-4a16-838a-8678130e8f99"],
+Cell[4246, 125, 544, 14, 124, "Input",ExpressionUUID->"2d53643c-b1d6-40ef-b1ea-faa77e167eee"],
+Cell[4793, 141, 1025, 24, 53, "Input",ExpressionUUID->"1ce2db2e-3ed4-438a-9e18-b33301f3d900"],
+Cell[5821, 167, 661, 15, 96, "Input",ExpressionUUID->"844ec868-d12c-4c86-92e6-d56b9940a361"],
+Cell[6485, 184, 792, 19, 96, "Input",ExpressionUUID->"60769d68-109b-4f37-b076-1f1429041f92"],
+Cell[7280, 205, 1071, 25, 99, "Input",ExpressionUUID->"10fe1172-9819-430c-b281-98b39a540b84"],
+Cell[8354, 232, 311, 6, 44, "Input",ExpressionUUID->"7acd25e4-82a1-4847-9a9a-a20bcd5caa4e"],
+Cell[8668, 240, 388, 9, 44, "Input",ExpressionUUID->"7b3ad7bd-6ab0-443f-922b-59c4eccd5e1a"],
+Cell[9059, 251, 367, 8, 44, "Input",ExpressionUUID->"bb367550-56e0-41de-be69-8e533d284e51"],
+Cell[9429, 261, 356, 8, 44, "Input",ExpressionUUID->"99f3629f-68cd-498e-8f6e-f422e10a0904"],
+Cell[9788, 271, 421, 10, 47, "Input",ExpressionUUID->"c9dbac08-1020-4f5c-a136-6e2612aec3e1"],
+Cell[10212, 283, 442, 10, 44, "Input",ExpressionUUID->"07f72687-4fc2-4032-ab7f-dacb6f6a51f0"],
+Cell[10657, 295, 442, 11, 44, "Input",ExpressionUUID->"b210f344-9ef9-4bc1-bf19-dd32c553e730"],
+Cell[11102, 308, 386, 8, 44, "Input",ExpressionUUID->"656d3164-9b6e-44dc-b2ec-b41ea40ed73e"]
+}
+]
+*)
+
