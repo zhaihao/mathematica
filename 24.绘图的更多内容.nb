@@ -1,0 +1,178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6291,        170]
+NotebookOptionsPosition[      5230,        148]
+NotebookOutlinePosition[      5594,        164]
+CellTagsIndexPosition[      5551,        161]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Range", "[", "10", "]"}], "^", "n"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3", ",", "4"}], "}"}]}], "}"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754281275675508*^9, 3.754281338262397*^9}},
+ CellLabel->
+  "In[139]:=",ExpressionUUID->"397df63c-4051-4def-83df-11e5c1e65254"],
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Prime", "[", "n", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "20"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Filling", "\[Rule]", "Axis"}], ",", 
+   RowBox[{"Mesh", "\[Rule]", "All"}], ",", 
+   RowBox[{"MeshStyle", "\[Rule]", "Red"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754281357854459*^9, 3.754281404243855*^9}},
+ CellLabel->
+  "In[141]:=",ExpressionUUID->"e918475d-eba3-4ffa-811e-ffe70076ecd4"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot3D", "[", 
+  RowBox[{"GeoElevationData", "[", 
+   RowBox[{"GeoDisk", "[", 
+    RowBox[{
+     TemplateBox[{"\"Mount Fuji\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Volcano\"", ",", "\"FujiSan\""}], "]"}],
+       "\"Entity[\\\"Volcano\\\", \\\"FujiSan\\\"]\"","\"volcano\""},
+      "Entity"], ",", 
+     RowBox[{"20", " ", 
+      TemplateBox[{
+       InterpretationBox["\[InvisibleSpace]", 1],"\"mi\"","miles","\"Miles\""},
+       "Quantity"]}]}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.75428143305811*^9, 3.754281470192484*^9}, {
+  3.754281512018846*^9, 3.75428151655492*^9}, {3.7542815948804626`*^9, 
+  3.754281628295629*^9}},ExpressionUUID->"aaf2b15a-9d56-4c8e-9951-\
+1f0de8fd1216"],
+
+Cell[BoxData[
+ RowBox[{"ReliefPlot", "[", 
+  RowBox[{"GeoElevationData", "[", 
+   RowBox[{"GeoDisk", "[", 
+    RowBox[{
+     TemplateBox[{"\"Mount Fuji\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Volcano\"", ",", "\"FujiSan\""}], "]"}],
+       "\"Entity[\\\"Volcano\\\", \\\"FujiSan\\\"]\"","\"volcano\""},
+      "Entity"], ",", 
+     RowBox[{"100", " ", 
+      TemplateBox[{
+       InterpretationBox["\[InvisibleSpace]", 1],"\"mi\"","miles","\"Miles\""},
+       "Quantity"]}]}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754281657954529*^9, 3.75428168193357*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"eccdbc17-e0c1-49b7-bc46-dfa29ec7a53c"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot3D", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i", ",", "j", ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"i", ",", "j"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "100"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "100"}], "}"}]}], "]"}], " ", "~", " ", "Flatten", 
+   " ", "~", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754281722841741*^9, 3.754281831012764*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"231bad09-1bde-4590-841a-7338c25d0674"],
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Prime", "[", 
+      RowBox[{"n", "+", "1"}], "]"}], "-", 
+     RowBox[{"Prime", "[", "n", "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "10000"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754281897229025*^9, 3.7542819667555027`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"34f46fac-3d8d-4cf7-9777-f65ebfd9b6b6"],
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"First", "[", 
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"n", "^", "2"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "10000"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7542820355035467`*^9, 3.7542820749373417`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"63488f81-e8e1-4e46-b90f-2f729aa5dac3"],
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"StringLength", "[", 
+     RowBox[{"RomanNumeral", "[", "n", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1000"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754282085856226*^9, 3.754282113547761*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"0169044e-72a4-4056-b120-4c3b9da24b28"],
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{"StringLength", "[", 
+   RowBox[{"TextSentences", "[", 
+    RowBox[{"WikipediaData", "[", "\"\<computers\>\"", "]"}], "]"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754282142743106*^9, 3.7542821526966333`*^9}, {
+  3.7542821926442833`*^9, 3.754282198673931*^9}, {3.754282252764736*^9, 
+  3.754282283232068*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"e2169531-ac45-4d11-a10c-d416d994d1eb"]
+},
+WindowSize->{590, 723},
+WindowMargins->{{Automatic, 45}, {Automatic, 6}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 450, 13, 44, "Input",ExpressionUUID->"397df63c-4051-4def-83df-11e5c1e65254"],
+Cell[1011, 35, 518, 13, 80, "Input",ExpressionUUID->"e918475d-eba3-4ffa-811e-ffe70076ecd4"],
+Cell[1532, 50, 733, 16, 95, "Input",ExpressionUUID->"aaf2b15a-9d56-4c8e-9951-1f0de8fd1216"],
+Cell[2268, 68, 656, 14, 95, "Input",ExpressionUUID->"eccdbc17-e0c1-49b7-bc46-dfa29ec7a53c"],
+Cell[2927, 84, 570, 15, 80, "Input",ExpressionUUID->"231bad09-1bde-4590-841a-7338c25d0674"],
+Cell[3500, 101, 441, 11, 44, "Input",ExpressionUUID->"34f46fac-3d8d-4cf7-9777-f65ebfd9b6b6"],
+Cell[3944, 114, 426, 10, 44, "Input",ExpressionUUID->"63488f81-e8e1-4e46-b90f-2f729aa5dac3"],
+Cell[4373, 126, 400, 9, 44, "Input",ExpressionUUID->"0169044e-72a4-4056-b120-4c3b9da24b28"],
+Cell[4776, 137, 450, 9, 80, "Input",ExpressionUUID->"e2169531-ac45-4d11-a10c-d416d994d1eb"]
+}
+]
+*)
+
