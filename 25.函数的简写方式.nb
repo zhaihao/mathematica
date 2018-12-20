@@ -1,0 +1,198 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8069,        188]
+NotebookOptionsPosition[      7105,        167]
+NotebookOutlinePosition[      7468,        183]
+CellTagsIndexPosition[      7425,        180]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"f", " ", "/@", " ", 
+  RowBox[{"Range", "[", "5", "]"}]}]], "Input",
+ CellChangeTimes->{{3.754286597382807*^9, 3.7542866061195717`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"710f8591-00cc-4619-9d3d-7f146ceb7153"],
+
+Cell[BoxData[
+ RowBox[{"f", " ", "/@", " ", 
+  RowBox[{"g", " ", "/@", " ", 
+   RowBox[{"Range", "[", "5", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7542866152770987`*^9, 3.754286631326589*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"5088b634-0940-441b-b267-a9093949a8a2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "//", "d"}], "//", "c"}], "//", "b"}], "//", "a"}]], "Input",\
+
+ CellChangeTimes->{{3.7542866400321302`*^9, 3.754286646458469*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"cc81497f-b2b6-4828-a83a-9c4388b0e551"],
+
+Cell[BoxData[
+ RowBox[{"Framed", " ", "/@", " ", 
+  RowBox[{"Alphabet", "[", 
+   RowBox[{"Language", "->", "\"\<English\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7542866552572107`*^9, 3.7542867008849773`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"6307d3ff-7fd2-4278-91af-3b47d802736c"],
+
+Cell[BoxData[
+ RowBox[{"ColorNegate", " ", "/@", " ", 
+  RowBox[{
+   InterpretationBox[
+    DynamicModuleBox[{EntityFramework`Formatting`Private`open = False}, 
+     TemplateBox[{
+      TemplateBox[{"\"planets\""}, "ImplicitEntityClassBase"],
+       InterpretationBox[
+        TagBox[
+         GridBox[{{""}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+          DefaultBaseStyle -> "GeneralizedEntityInfoGrid", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"], 
+        Column[{}, DefaultBaseStyle -> "GeneralizedEntityInfoGrid"]],Dynamic[
+       EntityFramework`Formatting`Private`open],
+       "\"EntityClass[\\\"Planet\\\", All]\"",
+       TemplateBox[{"\"(\"", "\"planet\"", "\")\""}, "RowDefault"]},
+      "ImplicitEntityToggleLabeled"]],
+    EntityClass["Planet", All],
+    SelectWithContents->True], "[", "\"\<Image\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.754286723636942*^9, 3.754286770077491*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"7c242646-dc19-403a-950f-c35a80403d58"],
+
+Cell[BoxData[
+ RowBox[{"ImageCollage", "[", 
+  RowBox[{"Binarize", " ", "/@", 
+   RowBox[{
+    NamespaceBox["LinguisticAssistant",
+     DynamicModuleBox[{Typeset`query$$ = "Europe", Typeset`boxes$$ = 
+      TemplateBox[{"\"Europe\"", 
+        RowBox[{"EntityClass", "[", 
+          RowBox[{"\"Country\"", ",", "\"Europe\""}], "]"}], 
+        "\"EntityClass[\\\"Country\\\", \\\"Europe\\\"]\"", "\"countries\""}, 
+       "EntityClass"], 
+      Typeset`allassumptions$$ = {{
+       "type" -> "Clash", "word" -> "Europe", "template" -> 
+        "Assuming \"${word}\" is ${desc1}. Use as ${desc2} instead", "count" -> 
+        "3", "Values" -> {{
+          "name" -> "CountryClass", "desc" -> "a class of countries", "input" -> 
+           "*C.Europe-_*CountryClass-"}, {
+          "name" -> "GeographicRegion", "desc" -> "a continent", "input" -> 
+           "*C.Europe-_*GeographicRegion-"}, {
+          "name" -> "Word", "desc" -> "a word", "input" -> 
+           "*C.Europe-_*Word-"}}}, {
+       "type" -> "SubCategory", "word" -> "Europe", "template" -> 
+        "Assuming ${desc1}. Use ${desc2} instead", "count" -> "4", 
+        "Values" -> {{
+          "name" -> "Europe", "desc" -> "Europe", "input" -> 
+           "*DPClash.CountryEC.Europe-_*Europe-"}, {
+          "name" -> "EuropeSovereign", "desc" -> "sovereign states in Europe",
+            "input" -> "*DPClash.CountryEC.Europe-_*EuropeSovereign-"}, {
+          "name" -> "EuropeExtended", "desc" -> 
+           "Europe with Russia and Turkey", "input" -> 
+           "*DPClash.CountryEC.Europe-_*EuropeExtended-"}, {
+          "name" -> "EuropeRussia", "desc" -> "Europe with Russia", "input" -> 
+           "*DPClash.CountryEC.Europe-_*EuropeRussia-"}}}}, 
+      Typeset`assumptions$$ = {"*C.Europe-_*CountryClass-"}, 
+      Typeset`open$$ = {1, 2}, Typeset`querystate$$ = {
+      "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+       0.979468`6.442535245311735, "Messages" -> {}}}, 
+      DynamicBox[ToBoxes[
+        AlphaIntegration`LinguisticAssistantBoxes["", 4, Automatic, 
+         Dynamic[Typeset`query$$], 
+         Dynamic[Typeset`boxes$$], 
+         Dynamic[Typeset`allassumptions$$], 
+         Dynamic[Typeset`assumptions$$], 
+         Dynamic[Typeset`open$$], 
+         Dynamic[Typeset`querystate$$]], StandardForm],
+       ImageSizeCache->{176., {7., 15.}},
+       TrackedSymbols:>{
+        Typeset`query$$, Typeset`boxes$$, Typeset`allassumptions$$, 
+         Typeset`assumptions$$, Typeset`open$$, Typeset`querystate$$}],
+      DynamicModuleValues:>{},
+      UndoTrackedVariables:>{Typeset`open$$}],
+     BaseStyle->{"Deploy"},
+     DeleteWithContents->True,
+     Editable->False,
+     SelectWithContents->True], "[", "\"\<Flag\>\"", "]"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.7542869814978113`*^9, 3.7542870889203577`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"6f29407f-a19a-4fe8-8d5c-6fe2bb608805"],
+
+Cell[BoxData[
+ RowBox[{"Column", "/@", 
+  RowBox[{"DominantColors", " ", "/@", 
+   RowBox[{
+    InterpretationBox[
+     DynamicModuleBox[{EntityFramework`Formatting`Private`open = False}, 
+      TemplateBox[{
+       TemplateBox[{"\"planets\""}, "ImplicitEntityClassBase"],
+        InterpretationBox[
+         TagBox[
+          
+          GridBox[{{""}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+           DefaultBaseStyle -> "GeneralizedEntityInfoGrid", 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"], 
+         
+         Column[{}, DefaultBaseStyle -> "GeneralizedEntityInfoGrid"]],Dynamic[
+        EntityFramework`Formatting`Private`open],
+        "\"EntityClass[\\\"Planet\\\", All]\"",
+        TemplateBox[{"\"(\"", "\"planet\"", "\")\""}, "RowDefault"]},
+       "ImplicitEntityToggleLabeled"]],
+     EntityClass["Planet", All],
+     SelectWithContents->True], "[", "\"\<Image\>\"", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.754287133617758*^9, 3.754287219076318*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"6fad6acf-6afd-45b5-8a49-dda1b71c14a6"],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{"LetterNumber", " ", "/@", 
+    RowBox[{"Characters", "[", "\"\<wolfram\>\"", "]"}]}], "//", 
+   "Total"}]}]], "Input",
+ CellChangeTimes->{{3.75428730203283*^9, 3.7542873618810787`*^9}, {
+  3.754287419810341*^9, 3.7542874350959806`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"822e819d-ba08-42d1-aa13-594975aa558a"]
+},
+WindowSize->{552, 799},
+WindowMargins->{{Automatic, 6}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 239, 4, 44, "Input",ExpressionUUID->"710f8591-00cc-4619-9d3d-7f146ceb7153"],
+Cell[800, 26, 274, 5, 44, "Input",ExpressionUUID->"5088b634-0940-441b-b267-a9093949a8a2"],
+Cell[1077, 33, 274, 7, 30, "Input",ExpressionUUID->"cc81497f-b2b6-4828-a83a-9c4388b0e551"],
+Cell[1354, 42, 295, 5, 44, "Input",ExpressionUUID->"6307d3ff-7fd2-4278-91af-3b47d802736c"],
+Cell[1652, 49, 1055, 21, 67, "Input",ExpressionUUID->"7c242646-dc19-403a-950f-c35a80403d58"],
+Cell[2710, 72, 2897, 57, 52, "Input",ExpressionUUID->"6f29407f-a19a-4fe8-8d5c-6fe2bb608805"],
+Cell[5610, 131, 1121, 24, 67, "Input",ExpressionUUID->"6fad6acf-6afd-45b5-8a49-dda1b71c14a6"],
+Cell[6734, 157, 367, 8, 44, "Input",ExpressionUUID->"822e819d-ba08-42d1-aa13-594975aa558a"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
