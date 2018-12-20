@@ -1,0 +1,151 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5459,        141]
+NotebookOptionsPosition[      4373,        118]
+NotebookOutlinePosition[      4760,        135]
+CellTagsIndexPosition[      4717,        132]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"LanguageIdentify", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<ajatella\>\"", ",", "\"\<Haha\>\"", ",", "\"\<\:54c8\:54c8\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754277431019972*^9, 3.754277434621934*^9}, {
+  3.754277661873825*^9, 3.7542777359128857`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"701023fb-bb1b-4dd8-a575-8d86ddd7c037"],
+
+Cell[BoxData[{
+ RowBox[{"img", "=", 
+  RowBox[{
+   TemplateBox[{"\"tiger\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Species\"", ",", "\"Species:PantheraTigris\""}], "]"}],
+     "\"Entity[\\\"Species\\\", \\\"Species:PantheraTigris\\\"]\"",
+     "\"species specification\""},
+    "Entity"], "[", "\"\<Image\>\"", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ImageIdentify", "[", "img", "]"}]}], "Input",
+ CellChangeTimes->{{3.7542777597143593`*^9, 3.754277789621415*^9}, {
+  3.754277917133485*^9, 3.754277952694998*^9}},
+ CellLabel->"In[83]:=",ExpressionUUID->"27e1cf14-84eb-4d59-b42d-b48f0d719372"],
+
+Cell[BoxData[{
+ RowBox[{"imgs", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Blur", "[", 
+     RowBox[{"img", ",", "r"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"r", ",", "1", ",", "5"}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ImageIdentify", "[", "imgs", "]"}]}], "Input",
+ CellChangeTimes->{{3.754277933036996*^9, 3.754277933379334*^9}, {
+  3.7542779662039747`*^9, 3.754278015932917*^9}},
+ CellLabel->"In[86]:=",ExpressionUUID->"9b707753-c78b-4dba-b80a-12d3993670d8"],
+
+Cell[BoxData[
+ RowBox[{"Classify", "[", 
+  RowBox[{"\"\<Sentiment\>\"", ",", "\"\<I'm so happy to be here.\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754278046642572*^9, 3.754278074881257*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"0ee9b284-affc-43a1-948e-6ee0762ab607"],
+
+Cell[BoxData[
+ RowBox[{"Nearest", "[", 
+  RowBox[{
+   RowBox[{"WordList", "[", 
+    RowBox[{"Language", "\[Rule]", "\"\<English\>\""}], "]"}], ",", 
+   "\"\<happy\>\"", ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.754278108245757*^9, 3.754278142125217*^9}},
+ CellLabel->"In[91]:=",ExpressionUUID->"491d3049-5f81-43b7-91bb-714dc63ed9cb"],
+
+Cell[BoxData[
+ RowBox[{"Nearest", "[", 
+  RowBox[{
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"1000", ",", "20"}], "]"}], ",", "100", ",", "3"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754278155642515*^9, 3.7542781794936666`*^9}},
+ CellLabel->"In[93]:=",ExpressionUUID->"f33bf191-aa21-470f-b4c7-8c3d75b586e6"],
+
+Cell[BoxData[
+ RowBox[{"Nearest", "[", 
+  RowBox[{
+   RowBox[{"RandomColor", "[", "100", "]"}], ",", "Red", ",", "5"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754278197431089*^9, 3.754278220660226*^9}, {
+  3.7542783413472*^9, 3.754278358749502*^9}},
+ CellLabel->"In[97]:=",ExpressionUUID->"8d17bf76-f978-4e5d-9e9b-7b36b0938ac8"],
+
+Cell[BoxData[
+ RowBox[{"Nearest", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Range", "[", "100", "]"}], "^", "2"}], ",", "2000"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754278380445397*^9, 3.754278406607458*^9}},
+ CellLabel->"In[98]:=",ExpressionUUID->"87df922a-1e3b-4f44-8a01-18295495eb2d"],
+
+Cell[BoxData[
+ RowBox[{"Nearest", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Europe\"",RowBox[{"EntityClass", "[", 
+        RowBox[{"\"Country\"", ",", "\"Europe\""}], "]"}],
+      "\"EntityClass[\\\"Country\\\", \\\"Europe\\\"]\"","\"countries\""},
+     "EntityClass"], "[", "\"\<Flag\>\"", "]"}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Brazil\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Country\"", ",", "\"Brazil\""}], "]"}],
+      "\"Entity[\\\"Country\\\", \\\"Brazil\\\"]\"","\"country\""},
+     "Entity"], "[", "\"\<Flag\>\"", "]"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.754278440255755*^9, {3.754278473472549*^9, 3.754278528527451*^9}},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"88979919-d1fc-4072-afaa-4bb34dff05e1"]
+},
+WindowSize->{641, 795},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 375, 8, 46, "Input",ExpressionUUID->"701023fb-bb1b-4dd8-a575-8d86ddd7c037"],
+Cell[936, 30, 598, 11, 74, "Input",ExpressionUUID->"27e1cf14-84eb-4d59-b42d-b48f0d719372"],
+Cell[1537, 43, 502, 12, 80, InheritFromParent,ExpressionUUID->"9b707753-c78b-4dba-b80a-12d3993670d8"],
+Cell[2042, 57, 279, 5, 44, "Input",ExpressionUUID->"0ee9b284-affc-43a1-948e-6ee0762ab607"],
+Cell[2324, 64, 343, 7, 44, "Input",ExpressionUUID->"491d3049-5f81-43b7-91bb-714dc63ed9cb"],
+Cell[2670, 73, 315, 7, 44, "Input",ExpressionUUID->"f33bf191-aa21-470f-b4c7-8c3d75b586e6"],
+Cell[2988, 82, 331, 7, 44, "Input",ExpressionUUID->"8d17bf76-f978-4e5d-9e9b-7b36b0938ac8"],
+Cell[3322, 91, 294, 7, 44, "Input",ExpressionUUID->"87df922a-1e3b-4f44-8a01-18295495eb2d"],
+Cell[3619, 100, 750, 16, 83, "Input",ExpressionUUID->"88979919-d1fc-4072-afaa-4bb34dff05e1"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
