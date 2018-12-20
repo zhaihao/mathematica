@@ -1,0 +1,346 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13740,        338]
+NotebookOptionsPosition[     11534,        303]
+NotebookOutlinePosition[     11921,        320]
+CellTagsIndexPosition[     11878,        317]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754263297356181*^9, 3.754263311980937*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6191b63e-0db4-4e9e-be86-4e050b57e395"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754263315210216*^9, 3.754263334151806*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"0f199bec-de04-4c48-ae41-137b06b1e502"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"Background", "\[Rule]", "Yellow"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.75426333958383*^9, 3.754263354985651*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"81c8a551-b298-4f33-a368-e42fd3ea994b"],
+
+Cell[BoxData[
+ RowBox[{"GeoListPlot", "[", 
+  RowBox[{
+   TemplateBox[{"\"Australia\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Country\"", ",", "\"Australia\""}], "]"}],
+     "\"Entity[\\\"Country\\\", \\\"Australia\\\"]\"","\"country\""},
+    "Entity"], ",", 
+   RowBox[{"GeoRange", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754263363108182*^9, 3.754263397130584*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"48f88aed-811e-42c1-bd7e-52ae54273082"],
+
+Cell[BoxData[
+ RowBox[{"GeoListPlot", "[", 
+  RowBox[{
+   TemplateBox[{"\"Madagascar\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Country\"", ",", "\"Madagascar\""}], "]"}],
+     "\"Entity[\\\"Country\\\", \\\"Madagascar\\\"]\"","\"country\""},
+    "Entity"], ",", 
+   RowBox[{"GeoRange", "\[Rule]", 
+    TemplateBox[{"\"Indian Ocean\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Ocean\"", ",", "\"IndianOcean\""}], "]"}],
+      "\"Entity[\\\"Ocean\\\", \\\"IndianOcean\\\"]\"","\"ocean\""},
+     "Entity"]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754263594520762*^9, 3.754263636208193*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"7d40aedd-caf5-461f-83b6-52470e80385b"],
+
+Cell[BoxData[
+ RowBox[{"GeoGraphics", "[", 
+  RowBox[{
+   TemplateBox[{"\"South America\"",RowBox[{"EntityClass", "[", 
+       RowBox[{"\"Country\"", ",", "\"SouthAmerica\""}], "]"}],
+     "\"EntityClass[\\\"Country\\\", \\\"SouthAmerica\\\"]\"","\"countries\""},
+    "EntityClass"], ",", 
+   RowBox[{"GeoBackground", "\[Rule]", "\"\<ReliefMap\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7542636803852253`*^9, 3.7542637133094873`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"269f6413-f90b-4cce-86f9-455d1107508e"],
+
+Cell[BoxData[
+ RowBox[{"GeoListPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{"\"Finland\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Finland\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Finland\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"France\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"France\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"France\\\"]\"","\"country\""},
+      "Entity"], ",", 
+     TemplateBox[{"\"Greece\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Country\"", ",", "\"Greece\""}], "]"}],
+       "\"Entity[\\\"Country\\\", \\\"Greece\\\"]\"","\"country\""},
+      "Entity"]}], "}"}], ",", 
+   RowBox[{"GeoLabels", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754263734371255*^9, 3.754263854565302*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"46dcb1c9-0dcc-4b10-b9ef-c96d1ff11c66"],
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"i", "*", "j"}], ",", "White"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "12"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "12"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Background", "\[Rule]", "Black"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7542638724412737`*^9, 
+  3.7542639752931433`*^9}},ExpressionUUID->"02fe1313-7029-4ff7-8f5c-\
+4c8f0d3d2782"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Disk", "[", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"RandomInteger", "[", "40", "]"}]}]}], "]"}], ",", "100"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.754264126830514*^9, 3.754264158524397*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"ec3e8070-35c2-4bdd-b589-42e97555092f"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"RegularPolygon", "[", "5", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "30"}], ",", 
+     RowBox[{"AspectRatio", "\[Rule]", "n"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754264198947343*^9, 3.7542642419021397`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"87d81277-7911-45a7-bdff-5b722959f722"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Circle", "[", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "r"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "5", ",", "500"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754264264979759*^9, 3.7542643107354107`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"aab3351d-4b24-4450-8d2d-7b2615ff916b"],
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"RandomColor", "[", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "10"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754264327270027*^9, 3.754264385767829*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"6c89adc0-a910-47fb-a03b-2d0fe903f8f8"],
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"StringLength", "[", 
+      RowBox[{"RomanNumeral", "[", "n", "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", "100", ",", "1"}], "}"}]}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"Max", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"StringLength", "[", 
+        RowBox[{"RomanNumeral", "[", "a", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", "1", ",", "1000", ",", "1"}], "}"}]}], "]"}], 
+     "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754264428735564*^9, 3.7542644604674587`*^9}, {
+  3.7542644916288643`*^9, 3.7542645426570883`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"f39cf3bb-d0b6-4440-8cec-e3d74bc9a434"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7542645629530582`*^9, 3.754264577089876*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"c11a53df-3501-477e-8007-dd58aba9b656"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"Background", "\[Rule]", "Yellow"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7542645884756927`*^9, 3.754264608435567*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"ccfb400a-455c-4ff1-936a-5418b33b4dfd"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Range", "[", "10", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "r"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "50", ",", "150", ",", "10"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.754264643653789*^9, 3.754264663154554*^9}, {
+  3.7542647992852297`*^9, 3.754264814480308*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"615ff053-5ad6-4d48-87c9-f2119424edb1"],
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Range", "[", "20", "]"}], "^", "2"}], ",", 
+   RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754273073585009*^9, 3.75427308198659*^9}, {
+  3.7542732489853373`*^9, 3.7542732859588213`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"1abedcdc-7214-4034-9f01-96c4e42da8ea"],
+
+Cell[BoxData[
+ RowBox[{"GeoGraphics", "[", 
+  RowBox[{
+   RowBox[{"GeoDisk", "[", 
+    RowBox[{
+     TemplateBox[{"\"Mount Everest\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"Mountain\"", ",", "\"MountEverest\""}], "]"}],
+       "\"Entity[\\\"Mountain\\\", \\\"MountEverest\\\"]\"","\"mountain\""},
+      "Entity"], ",", 
+     RowBox[{"100", " ", 
+      TemplateBox[{
+       InterpretationBox["\[InvisibleSpace]", 1],"\"mi\"","miles","\"Miles\""},
+       "Quantity"]}]}], "]"}], ",", 
+   RowBox[{"GeoBackground", "\[Rule]", "\"\<ReliefMap\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.7542733181173773`*^9, {3.754273389664764*^9, 3.754273470797518*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"d2a6027f-8f0f-4042-8eb1-5329a1006162"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Range", "[", "10", "]"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754273499024068*^9, 3.7542735303760643`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"d49158e7-779e-4f84-a2eb-0b1e7c71f67c"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"RegularPolygon", "[", "6", "]"}], ",", 
+     RowBox[{"AspectRatio", "\[Rule]", "r"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0.1", " ", ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7542735584573517`*^9, 3.754273571737028*^9}, {
+  3.7542736060396442`*^9, 3.754273617424129*^9}, {3.754273653203185*^9, 
+  3.754273681846035*^9}, {3.75427379969436*^9, 3.754273805820743*^9}, {
+  3.754273904830969*^9, 3.754273934470233*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"39275ece-9fec-4fce-9492-e87192347df5"],
+
+Cell[BoxData[
+ RowBox[{"DateListPlot", "[", 
+  RowBox[{
+   RowBox[{"AirTemperatureData", "[", 
+    RowBox[{
+     TemplateBox[{"\"Paris\"",RowBox[{"Entity", "[", 
+         RowBox[{"\"City\"", ",", 
+           RowBox[{"{", 
+             RowBox[{"\"Paris\"", ",", "\"IleDeFrance\"", ",", "\"France\""}],
+              "}"}]}], "]"}],
+       "\"Entity[\\\"City\\\", {\\\"Paris\\\", \\\"IleDeFrance\\\", \
+\\\"France\\\"}]\"","\"city\""},
+      "Entity"], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Today", "-", 
+        TemplateBox[{"1","\"wk\"","weeks","\"Weeks\""},
+         "Quantity"]}], ",", "Today"}], "}"}]}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "8"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.754273968523816*^9, 3.75427398783216*^9}, {
+  3.7542740299345284`*^9, 3.7542740985895348`*^9}, {3.7542742174141407`*^9, 
+  3.75427429367673*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"b491fb0d-9cb2-49e2-9810-fd2ca1a91922"]
+},
+WindowSize->{617, 790},
+WindowMargins->{{Automatic, 8}, {Automatic, 0}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 310, 6, 44, "Input",ExpressionUUID->"6191b63e-0db4-4e9e-be86-4e050b57e395"],
+Cell[871, 28, 301, 6, 44, "Input",ExpressionUUID->"0f199bec-de04-4c48-ae41-137b06b1e502"],
+Cell[1175, 36, 305, 6, 44, "Input",ExpressionUUID->"81c8a551-b298-4f33-a368-e42fd3ea994b"],
+Cell[1483, 44, 468, 9, 53, "Input",ExpressionUUID->"48f88aed-811e-42c1-bd7e-52ae54273082"],
+Cell[1954, 55, 672, 13, 53, "Input",ExpressionUUID->"7d40aedd-caf5-461f-83b6-52470e80385b"],
+Cell[2629, 70, 521, 10, 53, "Input",ExpressionUUID->"269f6413-f90b-4cce-86f9-455d1107508e"],
+Cell[3153, 82, 926, 19, 96, "Input",ExpressionUUID->"46dcb1c9-0dcc-4b10-b9ef-c96d1ff11c66"],
+Cell[4082, 103, 595, 16, 139, "Input",ExpressionUUID->"02fe1313-7029-4ff7-8f5c-4c8f0d3d2782"],
+Cell[4680, 121, 406, 10, 44, "Input",ExpressionUUID->"ec3e8070-35c2-4bdd-b589-42e97555092f"],
+Cell[5089, 133, 486, 11, 67, "Input",ExpressionUUID->"87d81277-7911-45a7-bdff-5b722959f722"],
+Cell[5578, 146, 426, 10, 44, "Input",ExpressionUUID->"aab3351d-4b24-4450-8d2d-7b2615ff916b"],
+Cell[6007, 158, 473, 12, 44, "Input",ExpressionUUID->"6c89adc0-a910-47fb-a03b-2d0fe903f8f8"],
+Cell[6483, 172, 813, 20, 116, "Input",ExpressionUUID->"f39cf3bb-d0b6-4440-8cec-e3d74bc9a434"],
+Cell[7299, 194, 302, 6, 44, "Input",ExpressionUUID->"c11a53df-3501-477e-8007-dd58aba9b656"],
+Cell[7604, 202, 356, 7, 44, "Input",ExpressionUUID->"ccfb400a-455c-4ff1-936a-5418b33b4dfd"],
+Cell[7963, 211, 489, 12, 44, "Input",ExpressionUUID->"615ff053-5ad6-4d48-87c9-f2119424edb1"],
+Cell[8455, 225, 382, 8, 44, "Input",ExpressionUUID->"1abedcdc-7214-4034-9f01-96c4e42da8ea"],
+Cell[8840, 235, 742, 17, 96, "Input",ExpressionUUID->"d2a6027f-8f0f-4042-8eb1-5329a1006162"],
+Cell[9585, 254, 304, 6, 44, "Input",ExpressionUUID->"d49158e7-779e-4f84-a2eb-0b1e7c71f67c"],
+Cell[9892, 262, 639, 13, 67, "Input",ExpressionUUID->"39275ece-9fec-4fce-9492-e87192347df5"],
+Cell[10534, 277, 996, 24, 96, "Input",ExpressionUUID->"b491fb0d-9cb2-49e2-9810-fd2ca1a91922"]
+}
+]
+*)
+
