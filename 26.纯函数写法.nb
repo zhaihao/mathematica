@@ -1,0 +1,202 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7331,        192]
+NotebookOptionsPosition[      6248,        169]
+NotebookOutlinePosition[      6635,        186]
+CellTagsIndexPosition[      6592,        183]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"#", "^", "2"}], " ", "&"}], "/@", " ", 
+  RowBox[{"Range", "[", "20", "]"}]}]], "Input",
+ CellChangeTimes->{{3.754349655609013*^9, 3.754349681726378*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"524dacc1-ff22-4a8a-b46e-e1c13d8e8aff"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Blend", "[", 
+    RowBox[{"{", 
+     RowBox[{"#", ",", "Red"}], "}"}], "]"}], "&"}], "/@", 
+  RowBox[{"{", 
+   RowBox[{"Yellow", ",", "Green", ",", "Blue"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.754349709280979*^9, 3.754349732146266*^9}, {
+  3.754349792122476*^9, 3.7543498005324593`*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"6d7ff6b5-09b1-4382-aa2a-ecbcacb326b9"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.754349785042985*^9, 
+  3.754349788424796*^9}},ExpressionUUID->"3c1ee62c-cc73-4e38-a3df-\
+c3074d9f6046"],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"Framed", " ", "/@", 
+   RowBox[{"Column", " ", "/@", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"ToUpperCase", "[", "#", "]"}], ",", "#"}], "}"}], "&"}], "/@", 
+      RowBox[{"Alphabet", "[", 
+       RowBox[{"Language", "->", "\"\<English\>\""}], "]"}]}], 
+     ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.754349838516011*^9, 3.7543499336652403`*^9}, {
+  3.7543499702911386`*^9, 3.75435009028866*^9}, {3.754350143582881*^9, 
+  3.7543501487894983`*^9}},ExpressionUUID->"a8249caa-6cfa-42d1-ae03-\
+b2cdc1d60046"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Framed", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"Background", "\[Rule]", 
+      RowBox[{"RandomColor", "[", "]"}]}]}], "]"}], " ", "&"}], "/@", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"RandomColor", "[", "]"}]}], "]"}], " ", "&"}], "/@", 
+    RowBox[{"Alphabet", "[", 
+     RowBox[{"Language", "->", "\"\<English\>\""}], "]"}]}], ")"}]}]], "Input",\
+
+ CellChangeTimes->{{3.754350133027522*^9, 3.754350195872369*^9}, {
+  3.754350232312057*^9, 3.7543502845498037`*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"e355802a-e1f9-4025-a064-6ecf139771a5"],
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{
+    NamespaceBox["LinguisticAssistant",
+     DynamicModuleBox[{Typeset`query$$ = "Group of 5", Typeset`boxes$$ = 
+      TemplateBox[{"\"Group of 5\"", 
+        RowBox[{"EntityClass", "[", 
+          RowBox[{"\"Country\"", ",", "\"GroupOf5\""}], "]"}], 
+        "\"EntityClass[\\\"Country\\\", \\\"GroupOf5\\\"]\"", 
+        "\"countries\""}, "EntityClass"], 
+      Typeset`allassumptions$$ = {{
+       "type" -> "Clash", "word" -> "Group of 5", "template" -> 
+        "Assuming \"${word}\" is ${desc1}. Use as ${desc2} instead", "count" -> 
+        "2", "Values" -> {{
+          "name" -> "CountryClass", "desc" -> "a class of countries", "input" -> 
+           "*C.Group+of+5-_*CountryClass-"}, {
+          "name" -> "FiniteGroupClass", "desc" -> "a class of finite groups", 
+           "input" -> "*C.Group+of+5-_*FiniteGroupClass-"}}}}, 
+      Typeset`assumptions$$ = {}, Typeset`open$$ = {1, 2}, 
+      Typeset`querystate$$ = {
+      "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+       1.23181`6.542088718925796, "Messages" -> {}}}, 
+      DynamicBox[ToBoxes[
+        AlphaIntegration`LinguisticAssistantBoxes["", 4, Automatic, 
+         Dynamic[Typeset`query$$], 
+         Dynamic[Typeset`boxes$$], 
+         Dynamic[Typeset`allassumptions$$], 
+         Dynamic[Typeset`assumptions$$], 
+         Dynamic[Typeset`open$$], 
+         Dynamic[Typeset`querystate$$]], StandardForm],
+       ImageSizeCache->{197., {7., 15.}},
+       TrackedSymbols:>{
+        Typeset`query$$, Typeset`boxes$$, Typeset`allassumptions$$, 
+         Typeset`assumptions$$, Typeset`open$$, Typeset`querystate$$}],
+      DynamicModuleValues:>{},
+      UndoTrackedVariables:>{Typeset`open$$}],
+     BaseStyle->{"Deploy"},
+     DeleteWithContents->True,
+     Editable->False,
+     SelectWithContents->True], "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Name\>\"", ",", "\"\<Flag\>\""}], "}"}], "]"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.754350385540895*^9, {3.7543504227905207`*^9, 3.754350603023285*^9}, {
+   3.754350638531502*^9, 3.754350745945487*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"f44e63ab-462e-471e-a082-b5c359c19c9c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"WordCloud", "[", 
+    RowBox[{"WikipediaData", "[", "#", "]"}], "]"}], " ", "&"}], "/@", " ", 
+  RowBox[{"{", 
+   RowBox[{"\"\<apple\>\"", ",", "\"\<peach\>\"", ",", "\"\<pear\>\""}], 
+   "}"}]}]], "Input",
+ CellChangeTimes->{{3.754350772045596*^9, 3.754350811901126*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"e2701f03-21e6-4518-b950-2627a070d640"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Histogram", "[", "#", "]"}], " ", "&"}], "/@", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringLength", "[", 
+      RowBox[{"TextWords", "[", 
+       RowBox[{"WikipediaData", "[", "#", "]"}], "]"}], "]"}], "&"}], "/@", 
+    RowBox[{"{", 
+     RowBox[{"\"\<apple\>\"", ",", "\"\<peach\>\"", ",", "\"\<pear\>\""}], 
+     "}"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.754350850456627*^9, 3.7543509134074173`*^9}, {
+  3.754351102557274*^9, 3.754351112758621*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"1bb4543e-8058-4c54-9f38-bcead79f4f26"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"#", "^", "2"}], "+", "1"}], "&"}], " ", "/@", 
+  RowBox[{"Range", "[", "10", "]"}]}]], "Input",
+ CellChangeTimes->{{3.754351173298958*^9, 3.7543511856904907`*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"f227dd36-7970-417d-8c2e-c01c5b2b06ff"]
+},
+WindowSize->{587, 707},
+WindowMargins->{{Automatic, 4}, {Automatic, 0}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (2018\:5e743\
+\:67085\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 280, 6, 44, "Input",ExpressionUUID->"524dacc1-ff22-4a8a-b46e-e1c13d8e8aff"],
+Cell[841, 28, 419, 10, 44, "Input",ExpressionUUID->"6d7ff6b5-09b1-4382-aa2a-ecbcacb326b9"],
+Cell[1263, 40, 152, 3, 30, "Input",ExpressionUUID->"3c1ee62c-cc73-4e38-a3df-c3074d9f6046"],
+Cell[1418, 45, 610, 16, 116, "Input",ExpressionUUID->"a8249caa-6cfa-42d1-ae03-b2cdc1d60046"],
+Cell[2031, 63, 671, 18, 80, "Input",ExpressionUUID->"e355802a-e1f9-4025-a064-6ecf139771a5"],
+Cell[2705, 83, 2227, 47, 95, "Input",ExpressionUUID->"f44e63ab-462e-471e-a082-b5c359c19c9c"],
+Cell[4935, 132, 398, 9, 44, "Input",ExpressionUUID->"e2701f03-21e6-4518-b950-2627a070d640"],
+Cell[5336, 143, 603, 15, 103, "Input",ExpressionUUID->"1bb4543e-8058-4c54-9f38-bcead79f4f26"],
+Cell[5942, 160, 302, 7, 44, "Input",ExpressionUUID->"f227dd36-7970-417d-8c2e-c01c5b2b06ff"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
